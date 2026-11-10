@@ -1,0 +1,37 @@
+.background-section {
+    background-image: url('../images/color-grain.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  min-height: 42vh;
+    color: white;
+  padding: 7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-section .container,
+.background-section .row {
+  width: 100%;
+}
+
+.background-section .c-section-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.background-section .c-section-content__title {
+  margin-bottom: 1.2rem;
+}
+
+.background-section .c-section-content__subtitle {
+  margin: 0 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .background-section {
+    padding: 5rem 1.5rem;
+  }
+}

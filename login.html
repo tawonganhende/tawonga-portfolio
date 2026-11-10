@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GGC - Admin Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/modernizr.js"></script>
+    <style>
+        .login-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            padding: 8rem 2rem;
+            background: #fff;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 450px;
+            padding: 4rem;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+    </style>
+</head>
+<body id="top">
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+    </header>
+
+    <section class="page-header page-header--events">
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+                <p class="subhead">Secure Access</p>
+                <h1>Admin Login</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-wrap">
+        <div class="login-card">
+            <div class="dashboard-alert" id="dashboard-config-alert" hidden></div>
+            <p id="login-status" style="margin-bottom: 2rem; font-weight: 500;"></p>
+
+            <form id="login-form" class="dashboard-form">
+                <label>
+                    Email Address
+                    <input type="email" name="email" required autocomplete="email" class="h-full-width">
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" required autocomplete="current-password" class="h-full-width">
+                </label>
+                <button type="submit" class="btn btn--primary btn--large h-full-width">Sign In</button>
+                <p style="margin-top: 1.6rem; text-align: center; font-size: 1.4rem;">
+                    <button type="button" id="forgot-password" class="btn btn--stroke h-full-width">Forgot password?</button>
+                </p>
+            </form>
+            
+            <p style="margin-top: 3rem; text-align: center; font-size: 1.4rem;">
+                <a href="index.html">← Back to Website</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="s-footer">
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© Copyright God's Grace Center 2026</span>
+                <span>263787155634</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>

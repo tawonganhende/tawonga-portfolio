@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AFM in Zimbabwe God's Grace Center Warren Park - Gallery</title>
+  <meta name="description" content="Church gallery and photo highlights.">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/modernizr.js"></script>
+
+  <style>
+    .page-header--gallery {
+      background: url('images/header-bgs/events-header-bg-2000.jpg') center/cover no-repeat;
+    }
+
+    .gallery-wrap {
+      padding: 8rem 0 10rem;
+      background: #fff;
+    }
+
+    .gallery-stage {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #0d1b3d;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+      margin-bottom: 2rem;
+    }
+
+    .gallery-stage img {
+      width: 100%;
+      max-height: 80vh;
+      aspect-ratio: 2000 / 1300;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-nav {
+        position: absolute;
+        inset: 50% 1.5rem auto;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        pointer-events: none;
+    }
+
+    .gallery-nav button {
+        pointer-events: auto;
+        min-width: 11rem;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.92);
+        color: #00164D;
+        padding: 1rem 1.6rem;
+        border-radius: 999px;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-nav button:hover {
+      background: #00164D;
+      color: #fff;
+    }
+
+    .gallery-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1.6rem 2rem;
+      color: #fff;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.72));
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .gallery-thumbs {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .gallery-thumb {
+        flex: 0 0 140px;
+        scroll-snap-align: start;
+        position: relative;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 14px;
+        overflow: hidden;
+        opacity: 0.72;
+        transform: translateY(0);
+        transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .gallery-thumb img {
+        display: block;
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .gallery-thumb.is-active {
+      opacity: 1;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+      transform: translateY(-2px);
+    }
+
+    .gallery-thumb:focus-visible,
+    .gallery-nav button:focus-visible {
+      outline: 3px solid #037c82;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 700px) {
+      .gallery-nav {
+        position: static;
+        transform: none;
+        margin: 1rem;
+        pointer-events: auto;
+      }
+
+      .gallery-stage img {
+        height: 52vh;
+      }
+
+      .gallery-thumb img {
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <div id="preloader">
+    <div id="loader" class="dots-jump">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <header class="s-header">
+    <div class="header-logo">
+      <a class="site-logo" href="index.html">
+        <img src="images/logo.svg" alt="Homepage">
+      </a>
+    </div>
+
+    <nav class="header-nav-wrap">
+      <ul class="header-nav">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="about.html" title="About">About</a></li>
+        <li><a href="events.html" title="Services">Events & Services</a></li>
+        <li><a href="contact.html" title="Contact us">Contact</a></li>
+        <li class="current"><a href="gallery.html" title="Gallery">Gallery</a></li>
+        <li><a href="give.html" title="Give">Give</a></li>
+        <li><a href="volunteer.html" title="Volunteer">Get-Involved</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+  </header>
+
+  <section class="page-header page-header--gallery">
+    <div class="gradient-overlay"></div>
+    <div class="row page-header__content">
+      <div class="column">
+        <h1>Gallery</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-wrap">
+    <div class="row">
+      <div class="column large-full">
+        <h3 class="subhead">Church Moments</h3>
+        <p class="lead">
+          A highlight reel of worship, fellowship, outreach, and special services at God's Grace Centre.
+        </p>
+
+        <div class="gallery-stage">
+          <img id="gallery-main" src="images/gallery/gallery-1.jpg" alt="Pastor Mhereyenyoka">
+
+          <div class="gallery-nav">
+            <button type="button" id="gallery-prev">Previous</button>
+            <button type="button" id="gallery-next">Next</button>
+          </div>
+
+          <div class="gallery-caption" id="gallery-caption">Pastor Mhereyenyoka</div>
+        </div>
+
+        <div class="gallery-thumbs" id="gallery-thumbs"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="s-footer">
+    <div class="row footer-top">
+      <div class="column large-4 medium-5 tab-full">
+        <div class="footer-logo">
+          <a class="site-footer-logo" href="index.html">
+            <img src="images/logo.svg" alt="Homepage">
+          </a>
+        </div>
+        <p>
+          At AFM God’s Grace Centre, Warren Park, we are a family of believers
+          dedicated to sharing the love of Christ, empowering lives, and serving
+          our community with excellence.
+        </p>
+      </div>
+
+      <div class="column large-half tab-full">
+        <div class="row">
+          <div class="column large-7 medium-full">
+            <h4 class="h6">Our Location</h4>
+            <p>
+              2800 7th Close, <br>
+              Warren Park 1, Harare, <br>
+              Zimbabwe
+            </p>
+          </div>
+
+          <div class="column large-5 medium-full">
+            <h4 class="h6">Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="events.html">Upcoming Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div class="column ss-copyright">
+        <span>© Copyright God's Grace Center 2026</span>
+        <span>263787155634</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    (function () {
+      const images = [
+        { src: 'images/gallery/gallery-1.jpg', caption: 'Pastor Mhereyenyoka' },
+        { src: 'images/gallery/gallery-2.jpg', caption: 'Band & Worship Team' },
+        { src: 'images/gallery/gallery-3.jpg', caption: 'Worship Team Ministering' },
+        { src: 'images/gallery/gallery-4.jpg', caption: 'Congregation Worshipping' },
+        { src: 'images/gallery/gallery-5.jpg', caption: 'Congregation Worshipping' },
+        { src: 'images/gallery/gallery-6.jpg', caption: 'Media' },
+        { src: 'images/gallery/gallery-7.jpg', caption: 'Congregation Worshipping' },
+        { src: 'images/gallery/gallery-8.jpg', caption: 'Amai Mufundisi Mhereyenyoka' },
+        { src: 'images/gallery/gallery-9.jpg', caption: 'GGC Church Board' },
+        { src: 'images/gallery/gallery-10.jpg', caption: 'Wide Shot of Congregation' },
+        { src: 'images/gallery/gallery-11.jpg', caption: 'Ushering, Security & Protocol' },
+        { src: 'images/gallery/gallery-12.jpg', caption: 'Congregation' },
+        { src: 'images/gallery/gallery-13.jpg', caption: 'Hospitality & Decorations Team' },
+        { src: 'images/gallery/gallery-14.jpg', caption: 'Church Choir' },
+        { src: 'images/gallery/gallery-15.jpg', caption: 'Praise & Worship Team' }
+      ];
+
+      const mainImage = document.getElementById('gallery-main');
+      const caption = document.getElementById('gallery-caption');
+      const thumbsWrap = document.getElementById('gallery-thumbs');
+      const prevButton = document.getElementById('gallery-prev');
+      const nextButton = document.getElementById('gallery-next');
+      let activeIndex = 0;
+
+      function renderThumbs() {
+        thumbsWrap.innerHTML = '';
+
+        images.forEach((image, index) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'gallery-thumb' + (index === 0 ? ' is-active' : '');
+          button.setAttribute('aria-label', image.caption);
+
+          const img = document.createElement('img');
+          img.src = image.src;
+          img.alt = image.caption;
+          button.appendChild(img);
+
+          button.addEventListener('click', () => setActive(index));
+          thumbsWrap.appendChild(button);
+        });
+      }
+
+      function setActive(index) {
+        activeIndex = (index + images.length) % images.length;
+        const activeImage = images[activeIndex];
+
+        mainImage.src = activeImage.src;
+        mainImage.alt = activeImage.caption;
+        caption.textContent = activeImage.caption;
+
+        thumbsWrap.querySelectorAll('.gallery-thumb').forEach((button, buttonIndex) => {
+          button.classList.toggle('is-active', buttonIndex === activeIndex);
+        });
+      }
+
+      prevButton.addEventListener('click', () => setActive(activeIndex - 1));
+      nextButton.addEventListener('click', () => setActive(activeIndex + 1));
+
+      renderThumbs();
+      setActive(0);
+    })();
+  </script>
+</body>
+</html>

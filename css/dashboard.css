@@ -1,0 +1,199 @@
+/* Dashboard-specific styles for the Supabase event editor */
+
+.dashboard-page {
+  background: #f6f5ef;
+}
+
+.dashboard-subhead {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.dashboard-header-copy {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.page-content--dashboard {
+  padding-top: 4rem;
+}
+
+.dashboard-layout > .column {
+  margin-bottom: 3rem;
+}
+
+.dashboard-panel {
+  background: #ffffff;
+  border: 1px solid rgba(0, 22, 77, 0.08);
+  border-radius: 1.8rem;
+  box-shadow: 0 2.4rem 5.5rem rgba(0, 22, 77, 0.08);
+  padding: 2.4rem;
+}
+
+.dashboard-panel + .dashboard-panel {
+  margin-top: 2.4rem;
+}
+
+.dashboard-panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.dashboard-panel__head--stacked {
+  display: block;
+}
+
+.dashboard-action {
+  white-space: nowrap;
+  align-self: center;
+}
+
+.dashboard-calendar {
+  min-height: 72rem;
+}
+
+.dashboard-alert {
+  background: rgba(251, 139, 35, 0.1);
+  border: 1px solid rgba(251, 139, 35, 0.25);
+  border-radius: 1rem;
+  color: #8b4f11;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.dashboard-status {
+  min-height: 2.4rem;
+  margin-top: -0.4rem;
+  margin-bottom: 1.2rem;
+  color: #54607a;
+}
+
+.dashboard-form label {
+  display: block;
+  margin-bottom: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+
+.dashboard-form input,
+.dashboard-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.8rem;
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  text-transform: none;
+}
+
+.dashboard-form textarea {
+  resize: vertical;
+}
+
+.dashboard-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.dashboard-check {
+  display: flex !important;
+  align-items: center;
+  gap: 0.8rem;
+  text-transform: none !important;
+  letter-spacing: 0.08rem;
+}
+
+.dashboard-check input {
+  width: auto;
+  margin: 0;
+}
+
+.dashboard-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.dashboard-danger {
+  border-color: #a84536;
+  color: #a84536;
+}
+
+.dashboard-session {
+  border-top: 1px solid rgba(0, 22, 77, 0.08);
+  padding-top: 1.8rem;
+}
+
+.dashboard-session__label {
+  margin-bottom: 0.4rem;
+  color: #6d7892;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+
+.dashboard-session__email {
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  color: #00164d;
+}
+
+.fc {
+  --fc-border-color: rgba(0, 22, 77, 0.08);
+  --fc-button-bg-color: #00164d;
+  --fc-button-border-color: #00164d;
+  --fc-button-hover-bg-color: #fb8b23;
+  --fc-button-hover-border-color: #fb8b23;
+  --fc-button-active-bg-color: #fb8b23;
+  --fc-button-active-border-color: #fb8b23;
+  --fc-neutral-bg-color: #f6f5ef;
+  --fc-list-event-hover-bg-color: rgba(0, 22, 77, 0.04);
+  font-family: "Lora", serif;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 2.2rem;
+}
+
+.fc .fc-button {
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.fc .fc-daygrid-event {
+  border-radius: 0.8rem;
+  padding: 0.3rem 0.6rem;
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard-calendar {
+    min-height: 56rem;
+  }
+
+  .dashboard-form__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard-panel {
+    padding: 1.8rem;
+  }
+
+  .dashboard-panel__head {
+    flex-direction: column;
+  }
+
+  .dashboard-action {
+    width: 100%;
+  }
+}
