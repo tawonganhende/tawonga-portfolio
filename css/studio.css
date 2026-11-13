@@ -57,3 +57,27 @@
     .service-grid{grid-template-columns:1fr}
     .service-card,.service-card--featured,.service-card--featured:first-child{grid-column:1}
 }
+
+/* Rounded interface treatment */
+.profile-header{border-radius:20px}
+.button,.header-cta{border-radius:999px}
+.service-card{border-radius:20px}
+.benefits-grid article{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:18px}
+.portfolio-media{border-radius:20px}
+.snapshot{border-radius:20px}
+.hero-node{border-radius:999px}
+.button-light{border-radius:999px}
+
+/* Subtle brand gradients */
+:root{--blue-gradient:linear-gradient(135deg,#123f8c 0%,#2f6fd3 100%);--soft-gradient:linear-gradient(135deg,#ffffff 0%,#eef4ff 100%);--dark-gradient:linear-gradient(135deg,#091f4b 0%,#123f8c 100%)}
+.site-header{background:linear-gradient(180deg,rgba(255,255,255,.98) 0%,rgba(247,250,255,.96) 100%)}
+.button-primary{background:var(--blue-gradient)}
+.button-primary:hover{background:linear-gradient(135deg,#0d2f73 0%,#245bb3 100%)}
+.intro-strip{background:var(--blue-gradient)}
+.services-section{background:var(--soft-gradient)}
+.service-card{background:linear-gradient(145deg,#fff 0%,#f8faff 100%)}
+.service-card--featured{background:linear-gradient(145deg,#fff 0%,#e7f0ff 100%)}
+.benefits-section{background:linear-gradient(180deg,#fff 0%,#f5f8fe 100%)}
+.portfolio-section{background:linear-gradient(135deg,#f8faff 0%,#eef3fb 100%)}
+.cta-section{background:var(--dark-gradient)}
+.site-footer{background:linear-gradient(135deg,#071a40 0%,#0d2f73 100%)}
